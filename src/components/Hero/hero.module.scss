@@ -1,0 +1,11 @@
+.hero {
+}
+
+.code-text {
+  @apply text-sm sm:text-2xl;
+
+  span {
+    display: inline-block;
+    padding: 0 0.2em;
+  }
+}

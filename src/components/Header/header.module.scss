@@ -1,0 +1,24 @@
+.header {
+  @apply flex justify-between h-16 items-center px-6 fixed top-0 left-0 w-full bg-background z-50;
+
+  // @media screen and (max-width: 768px) {
+  //   a {
+  //     &::after {
+  //       @apply content-[''] block w-4 h-4 bg-gray-400 border-4 border-white hover:bg-gray-500 rounded-xl;
+  //     }
+  //     span {
+  //       @include a11y-hidden;
+  //     }
+  //   }
+  // }
+}
+
+.headerInner {
+  @apply flex items-center text-gray-600 text-sm  gap-2  md:gap-3  md:gap-6;
+
+  @media screen and (max-width: 768px) {
+    span {
+      @apply text-xs;
+    }
+  }
+}

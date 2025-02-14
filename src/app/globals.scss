@@ -5,9 +5,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary: #499bef;
-  --primary-a11y: #4796e7;
-  --point: #6663fd;
+  --green: #00a896;
+  --red: #dc2f02;
+
+  --violet: #6663fd;
+  --blue: #1e88e5;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,7 +19,72 @@
   }
 }
 
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("/fonts/SF-Pro-Text-Light.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("/fonts/SF-Pro-Text-Semibold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
+  font-family: "SF Pro Text", sans-serif;
   color: var(--foreground);
   background: var(--background);
+}
+
+.common-container {
+  @apply min-h-[100dvh] py-16 flex items-center justify-center;
+
+  section {
+    @apply container mx-auto px-6;
+    h2 {
+      @apply text-3xl font-bold text-gray-800;
+
+      & + p {
+        @apply mt-4 mb-8 text-gray-600;
+      }
+    }
+  }
+}
+
+.title {
+  @apply font-bold;
+  span {
+    @apply font-normal text-lg text-gray-600 relative pl-3 ml-2;
+
+    &::before {
+      @apply content-[''] inline-block w-px  h-3 bg-gray-400 absolute top-1/2 left-0 -translate-y-1/2;
+    }
+  }
+}
+
+.a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+@mixin a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
 }
