@@ -47,25 +47,33 @@ body {
   section {
     @apply container mx-auto px-6;
     h2 {
-      @apply text-3xl font-bold text-gray-800;
+      @apply text-2xl font-bold text-gray-800 sm:text-3xl;
 
       & + p {
         @apply mt-4 mb-8 text-gray-600;
+      }
+
+      span {
+        @apply font-normal sm:text-lg text-gray-600 relative pl-3 ml-2 text-sm;
+
+        &::before {
+          @apply content-[''] inline-block w-px  h-3 bg-gray-400 absolute top-1/2 left-0 -translate-y-1/2;
+        }
       }
     }
   }
 }
 
-.title {
-  @apply font-bold;
-  span {
-    @apply font-normal text-lg text-gray-600 relative pl-3 ml-2;
+// .title {
+//   @apply font-bold;
+//   span {
+//     @apply font-normal text-lg text-gray-600 relative pl-3 ml-2;
 
-    &::before {
-      @apply content-[''] inline-block w-px  h-3 bg-gray-400 absolute top-1/2 left-0 -translate-y-1/2;
-    }
-  }
-}
+//     &::before {
+//       @apply content-[''] inline-block w-px  h-3 bg-gray-400 absolute top-1/2 left-0 -translate-y-1/2;
+//     }
+//   }
+// }
 
 .a11y-hidden {
   clip: rect(1px, 1px, 1px, 1px);

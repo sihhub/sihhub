@@ -7,7 +7,7 @@ export default function About() {
   return (
     <div className={`common-container bg-sky-50/40`} id="about">
       <section>
-        <h2 className="title">
+        <h2>
           About <span>소개</span>
         </h2>
         <AnimatePresence mode="wait">
@@ -17,7 +17,9 @@ export default function About() {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5 }}
           >
-            <div className={styles.profileImgContainer}>
+            <div
+              className={`${styles.profileImgContainer}  w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40`}
+            >
               <img
                 src="/images/profile.png"
                 alt="Profile"
