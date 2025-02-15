@@ -9,7 +9,7 @@ export default function Header() {
         <strong>sih</strong>Hub
       </span>
       <div className={styles.headerInner}>
-        <Link href="#hero">
+        <Link href="#home">
           <span>Home</span>
         </Link>
         <Link href="#about">

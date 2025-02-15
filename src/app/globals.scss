@@ -5,11 +5,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --green: #00a896;
-  --red: #dc2f02;
-
-  --violet: #6663fd;
-  --blue: #1e88e5;
+  --primary2: #6663fd;
+  --primary: #1e88e5;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -42,7 +39,9 @@ body {
 }
 
 .common-container {
-  @apply min-h-[100dvh] py-16 flex items-center justify-center;
+  @apply min-h-[100vh] flex items-center justify-center;
+  padding-top: 64px;
+  padding-bottom: 64px;
 
   section {
     @apply container mx-auto px-6;
