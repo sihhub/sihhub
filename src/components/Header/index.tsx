@@ -1,17 +1,28 @@
+"use client";
 import styles from "./header.module.scss";
 import Link from "next/link";
 import { GithubIcon, LicenseIcon } from "hugeicons-react";
+import { useEffect, useState } from "react";
 
 export default function Header() {
+  const [isScroll, setIsScroll] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScroll(window.scrollY > 0);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${isScroll ? "border-b" : ""}`}>
       <span className="text-l sm:text-xl">
         <strong>sih</strong>Hub
       </span>
       <div className={styles.headerInner}>
-        <Link href="#home">
-          <span>Home</span>
-        </Link>
         <Link href="#about">
           <span>About</span>
         </Link>

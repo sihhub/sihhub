@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { notoSansKR } from "@/fonts/ko";
+import { notoSansKR, roboto } from "@/fonts/ko";
 
 import "./globals.scss";
 
@@ -33,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko-KR">
-      <body className={notoSansKR.className}>{children}</body>
+      <body className={roboto.className}>{children}</body>
     </html>
   );
 }

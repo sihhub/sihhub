@@ -1,0 +1,22 @@
+.projects {
+  @apply grid gap-8;
+  & > li {
+    @apply flex flex-col   bg-white rounded-xl shadow-lg overflow-hidden;
+  }
+
+  div.thumb,
+  img {
+    @apply w-full aspect-[4/3] object-cover;
+  }
+
+  .thumb {
+    @apply relative bg-gray-200;
+  }
+
+  .tag {
+    @apply flex flex-wrap w-full gap-2 text-sm;
+  }
+  .btn-group {
+    @apply flex justify-end gap-2 mt-5;
+  }
+}

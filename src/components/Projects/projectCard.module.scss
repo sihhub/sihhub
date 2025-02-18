@@ -1,0 +1,52 @@
+.cardContent {
+  @apply flex flex-col grow justify-between pt-4 px-6 pb-6;
+
+  h3 {
+    @apply flex gap-2 font-medium;
+    &.title {
+      @apply text-lg flex items-center flex-wrap tracking-tight mb-2;
+      span {
+        @apply text-sm;
+      }
+    }
+  }
+  h3 + p {
+    #projects & {
+      @apply mb-6 text-gray-600;
+    }
+
+    #otherExperience &,
+    #otherExperience & ~ p {
+      @apply mt-2;
+    }
+  }
+
+  ul,
+  p {
+    @apply pl-2;
+  }
+
+  & > div:not(.btn-group) {
+    @apply w-full grow;
+  }
+  h3 + ul li {
+    @apply mt-2;
+  }
+}
+
+.card {
+}
+
+.thumb {
+  @apply relative bg-gray-200;
+  // width: 480px;
+  // height: 360px;
+
+  img {
+    @apply w-full aspect-[4/3] object-cover;
+    // object-fit: cover;
+    // aspect-ratio: 1/1;
+    // width: 480px;
+    // height: 360px;
+  }
+}

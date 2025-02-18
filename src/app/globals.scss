@@ -16,37 +16,38 @@
   }
 }
 
-@font-face {
-  font-family: "SF Pro Text";
-  src: url("/fonts/SF-Pro-Text-Light.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
+// @font-face {
+//   font-family: "SF Pro Text";
+//   src: url("/fonts/SF-Pro-Text-Light.woff2") format("woff2");
+//   font-weight: 400;
+//   font-style: normal;
+//   font-display: swap;
+// }
 
-@font-face {
-  font-family: "SF Pro Text";
-  src: url("/fonts/SF-Pro-Text-Semibold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
+// @font-face {
+//   font-family: "SF Pro Text";
+//   src: url("/fonts/SF-Pro-Text-Semibold.woff2") format("woff2");
+//   font-weight: 700;
+//   font-style: normal;
+//   font-display: swap;
+// }
 
 body {
-  font-family: "SF Pro Text", sans-serif;
+  // font-family: "SF Pro Text", sans-serif;
   color: var(--foreground);
   background: var(--background);
 }
 
 .common-container {
-  @apply min-h-[100vh] flex items-center justify-center;
+  @apply flex items-center justify-center; //min-h-[100vh]
   padding-top: 64px;
-  padding-bottom: 64px;
 
   section {
     @apply container mx-auto px-6;
     h2 {
-      @apply text-2xl font-bold text-gray-800 sm:text-3xl;
+      @apply text-2xl font-bold text-gray-800 sm:text-3xl mb-8;
+      border-bottom: dashed 2px #cccccc;
+      padding-bottom: 10px;
 
       & + p {
         @apply mt-4 mb-8 text-gray-600;

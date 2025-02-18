@@ -1,7 +1,7 @@
 "use client";
 
 import styles from "./logo.module.scss";
-import { nanumGothicCoding } from "@/fonts/ko";
+import { nanumGothicCoding, roboto } from "@/fonts/ko";
 
 export type LogoProps = {
   className?: string;
@@ -10,16 +10,13 @@ export type LogoProps = {
 export default function Logo({ className }: LogoProps) {
   return (
     <span
-      className={`${styles.logo} ${className || ""} ${
-        nanumGothicCoding.className
-      }`}
+      className={`${styles.logo} ${className || ""} 
+      ${roboto.className}
+      `}
     >
-      <span>s</span>
-      <span>i</span>
-      <span>h</span>
-      <span>H</span>
-      <span>u</span>
-      <span>b</span>
+      <span>홍</span>
+      <span>성</span>
+      <span>인</span>
     </span>
   );
 }
