@@ -18,5 +18,5 @@ jobs:
         with:
           feed_list: "https://sihhub.github.io/blog/feed.xml"
           max_post_count: 5
-          template: "- [$title]($url)$newline"
+          enable_keepalive: false # 활동이 없을 때 빈 커밋을 만드는 기능 — 끈다
           commit_message: "chore: 최근 블로그 글 갱신"

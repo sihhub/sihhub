@@ -27,7 +27,8 @@
 
 ### 📝 최근 블로그 글
 
-<!-- BLOG-POST-LIST:START -->- [화면 하나 바꿨는데 배포가 안 됩니다 — 1년 반 배포가 멈춰 있던 파이프라인에서 썩어 있던 것들](https://sihhub.github.io/blog/posts/dormant-pipeline-rot/)
+<!-- BLOG-POST-LIST:START -->
+- [화면 하나 바꿨는데 배포가 안 됩니다 — 1년 반 배포가 멈춰 있던 파이프라인에서 썩어 있던 것들](https://sihhub.github.io/blog/posts/dormant-pipeline-rot/)
 - [배포 이관은 왜 한 줄로 안 끝나는가 — 벽 네 개를 만난 기록](https://sihhub.github.io/blog/posts/deploy-migration-four-blockers/)
 - [Figma를 토큰의 단일 출처로 — 공식 API가 막힌 자리에서 동기화 파이프라인 만들기](https://sihhub.github.io/blog/posts/design-system-figma-token-sync/)
 - [로그가 거짓말을 할 때 — 관측을 오도한 두 사건](https://sihhub.github.io/blog/posts/misleading-logs-observability/)
