@@ -22,7 +22,7 @@
 ### ✨ 하이라이트
 
 - 채팅 SDK를 Web·React·Dart·Flutter 4개 패키지 모노레포로 백엔드 수정 권한 없이 단독 설계·구현 — JSON Schema 코드젠으로 TS·Dart 손 미러링 지점 2→1, npm·pub.dev 3채널 자동 배포로 공개 (노베라챗 SDK)
-- 운영 중 코드베이스 리팩토링 496커밋 중 ~474 주도 — 핵심 파일 라인 −50~84%, index.css −83%, 미사용 코드 ~915줄 제거 (패밀리타운)
+- 운영 중 코드베이스 리팩토링 496커밋 중 \~474 주도 — 핵심 파일 라인 −50\~84%, index.css −83%, 미사용 코드 \~915줄 제거 (패밀리타운)
 - 번역 SaaS 백엔드 개발자 공백기에 AWS 서버리스 실시간 협업 계층(API Gateway WebSocket + DynamoDB) 100% 직접 구축 (레터웍스)
 
 ### 📝 최근 블로그 글
@@ -39,16 +39,6 @@
 
 ### 🧰 기술
 
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/>
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript"/>
-<img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React"/>
-<img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js"/>
-<img src="https://img.shields.io/badge/React%20Query-FF4154?style=flat-square&logo=reactquery&logoColor=white" alt="React Query"/>
-<img src="https://img.shields.io/badge/Zustand-443E38?style=flat-square&logo=react&logoColor=white" alt="Zustand"/>
-<img src="https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=redux&logoColor=white" alt="Redux"/>
-<img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS"/>
-<img src="https://img.shields.io/badge/Storybook-FF4785?style=flat-square&logo=storybook&logoColor=white" alt="Storybook"/>
-<img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" alt="Flutter"/>
-<img src="https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white" alt="Dart"/>
-<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"/>
-<img src="https://img.shields.io/badge/AWS%20Lambda-FF9900?style=flat-square&logo=awslambda&logoColor=white" alt="AWS Lambda"/>
+<p>
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript"/> <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React"/> <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js"/> <img src="https://img.shields.io/badge/React%20Query-FF4154?style=flat-square&logo=reactquery&logoColor=white" alt="React Query"/> <img src="https://img.shields.io/badge/Zustand-443E38?style=flat-square&logo=react&logoColor=white" alt="Zustand"/> <img src="https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=redux&logoColor=white" alt="Redux"/> <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS"/> <img src="https://img.shields.io/badge/Storybook-FF4785?style=flat-square&logo=storybook&logoColor=white" alt="Storybook"/> <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" alt="Flutter"/> <img src="https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white" alt="Dart"/> <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"/> <img src="https://img.shields.io/badge/AWS%20Lambda-FF9900?style=flat-square&logo=awslambda&logoColor=white" alt="AWS Lambda"/>
+</p>
