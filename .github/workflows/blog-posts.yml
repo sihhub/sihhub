@@ -1,0 +1,22 @@
+# 프로필 README의 「최근 블로그 글」을 블로그 피드에서 매일 갱신한다.
+name: 최근 블로그 글 갱신
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # 매일 09:00 KST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          feed_list: "https://sihhub.github.io/blog/feed.xml"
+          max_post_count: 5
+          template: "- [$title]($url)$newline"
+          commit_message: "chore: 최근 블로그 글 갱신"
