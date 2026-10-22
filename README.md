@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/masthead-dark.svg">
-  <img src="./assets/masthead-light.svg" width="100%" alt="홍성인 · Frontend Developer — 번역 SaaS·앱 웹뷰 채팅·멀티플랫폼 SDK·디자인 시스템까지, 초기 아키텍처 설계부터 서비스 운영·리팩토링까지 경험한 6년차 웹 프론트엔드 개발자입니다.">
+  <img src="./assets/masthead-light.svg" width="100%" alt="홍성인 · Frontend Developer — 6년차 웹 프론트엔드 개발자입니다. 번역 SaaS·앱 웹뷰 채팅·멀티플랫폼 SDK·디자인 시스템을 만들며, 초기 아키텍처 설계부터 서비스 운영·리팩토링까지 경험했습니다.">
 </picture>
 
 <p>
@@ -13,7 +13,7 @@
 
 ### 01 — 지금 만드는 것
 
-**노베라챗 클라이언트 SDK** — 자체 채팅 서버를 감싸는 멀티플랫폼 클라이언트 SDK입니다. Web·React·Dart·Flutter 4개 패키지를 하나의 모노레포에서 만들고 npm·pub.dev에 공개 배포합니다.
+**노베라챗 클라이언트 SDK** — 자체 채팅 서버를 감싸는 멀티플랫폼 클라이언트 SDK입니다. Web·React·Dart·Flutter 4개 패키지를 하나의 모노레포에서 개발하고, npm·pub.dev에 공개 배포합니다.
 
 <p><a href="https://www.npmjs.com/package/@noverachat/sdk-web"><img src="https://img.shields.io/npm/v/@noverachat/sdk-web?style=flat-square&labelColor=17171a&color=a42a1e&label=%40noverachat%2Fsdk-web" alt="@noverachat/sdk-web"/></a> <a href="https://www.npmjs.com/package/@noverachat/sdk-react"><img src="https://img.shields.io/npm/v/@noverachat/sdk-react?style=flat-square&labelColor=17171a&color=a42a1e&label=%40noverachat%2Fsdk-react" alt="@noverachat/sdk-react"/></a> <a href="https://pub.dev/packages/noverachat_dart"><img src="https://img.shields.io/pub/v/noverachat_dart?style=flat-square&labelColor=17171a&color=a42a1e&label=noverachat_dart" alt="noverachat_dart"/></a> <a href="https://pub.dev/packages/noverachat_flutter"><img src="https://img.shields.io/pub/v/noverachat_flutter?style=flat-square&labelColor=17171a&color=a42a1e&label=noverachat_flutter" alt="noverachat_flutter"/></a></p>
 
@@ -21,9 +21,9 @@
 
 ### 02 — 핵심 성과
 
-1. 채팅 SDK를 Web·React·Dart·Flutter 4개 패키지 모노레포로 백엔드 수정 권한 없이 단독 설계·구현 — JSON Schema 코드젠으로 TS·Dart 손 미러링 지점 2→1, npm·pub.dev 3채널 자동 배포로 공개 (노베라챗 SDK)
-2. 운영 중 코드베이스 리팩토링 496커밋 중 \~474 주도 — 핵심 파일 라인 −50\~84%, index.css −83%, 미사용 코드 \~915줄 제거 (패밀리타운)
-3. 번역 SaaS 백엔드 개발자 공백기에 AWS 서버리스 실시간 협업 계층(API Gateway WebSocket + DynamoDB) 100% 직접 구축 (레터웍스)
+1. **노베라챗 SDK** — 백엔드 수정 권한 없이 Web·React·Dart·Flutter 4개 패키지 모노레포로 채팅 SDK를 단독 설계·구현. JSON Schema 코드젠으로 TS·Dart 수동 미러링 지점 2→1. npm·pub.dev 3채널 자동 배포로 공개.
+2. **패밀리타운** — 운영 중 코드베이스의 리팩토링 496커밋 중 \~474 주도. 핵심 파일 줄 수 −50\~84%, index.css −83%, 미사용 코드 \~915줄 제거.
+3. **레터웍스** — 번역 SaaS 백엔드 개발자 공백기에 실시간 협업 계층 100% 직접 구축. AWS 서버리스 구성: API Gateway WebSocket + DynamoDB.
 
 ---
 
