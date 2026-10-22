@@ -12,8 +12,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 FONTS = os.path.join(HERE, "fonts")
 
 FONT_URLS = {
-    "NotoSerifKR-Bold.otf": "https://cdn.jsdelivr.net/gh/notofonts/noto-cjk@main/Serif/SubsetOTF/KR/NotoSerifKR-Bold.otf",
-    "NotoSerifKR-Medium.otf": "https://cdn.jsdelivr.net/gh/notofonts/noto-cjk@main/Serif/SubsetOTF/KR/NotoSerifKR-Medium.otf",
+    "NotoSerifKR-Bold.otf": "https://raw.githubusercontent.com/notofonts/noto-cjk/main/Serif/SubsetOTF/KR/NotoSerifKR-Bold.otf",
+    "NotoSerifKR-Medium.otf": "https://raw.githubusercontent.com/notofonts/noto-cjk/main/Serif/SubsetOTF/KR/NotoSerifKR-Medium.otf",
     "JetBrainsMono-Bold.ttf": "https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono@master/fonts/ttf/JetBrainsMono-Bold.ttf",
     "JetBrainsMono-Medium.ttf": "https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono@master/fonts/ttf/JetBrainsMono-Medium.ttf",
     "Pretendard-SemiBold.otf": "https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard/dist/public/static/Pretendard-SemiBold.otf",
@@ -77,9 +77,10 @@ def wrap(font, s, size, maxw):
     if cur: lines.append(cur)
     return lines
 
-# ── 내용 — 사이트 data/resume.ts와 같은 문장·수치 ──
+# ── 내용 — 수치는 사이트 data/resume.ts와 같다. 리드문만 GitHub용으로 다듬어 사이트와 다르다 (2026-10-22) ──
 NAME = "홍성인"
-TAGLINE = "번역 SaaS·앱 웹뷰 채팅·멀티플랫폼 SDK·디자인 시스템까지, 초기 아키텍처 설계부터 서비스 운영·리팩토링까지 경험한 6년차 웹 프론트엔드 개발자입니다."
+NAME_SIZE = int(os.environ.get("NAME_SIZE", 72))   # 이름 글자 크기(px, 배너 폭 1200 기준). 124였을 때 이름이 배너를 다 먹었다
+TAGLINE = "6년차 웹 프론트엔드 개발자입니다. 번역 SaaS·앱 웹뷰 채팅·멀티플랫폼 SDK·디자인 시스템을 만들며, 초기 아키텍처 설계부터 서비스 운영·리팩토링까지 경험했습니다."
 STATS = [("6", "년차", "웹 프론트엔드 개발", None),
          ("4", "개", "플랫폼 SDK 단독 설계·공개", "노베라챗 SDK"),
          ("~474", "", "리팩토링 커밋 주도 (496 중)", "패밀리타운"),
@@ -99,8 +100,8 @@ def build(mode):
     y += 48
     p.append(f'<rect x="{PX}" y="{y}" width="{W - 2 * PX}" height="1.5" fill="{RULE}"/>')
     # 마스트헤드
-    name_base = y + 150
-    p.append(text(SERIF_B, NAME, PX - 4, name_base, 124, INK, tracking=-2.5)[0])
+    name_base = y + 34 + round(NAME_SIZE * 0.9)
+    p.append(text(SERIF_B, NAME, PX - 2, name_base, NAME_SIZE, INK, tracking=-NAME_SIZE * 0.02)[0])
     p.append(text(MONO_M, CONTACT[0], W - PX, name_base - 34, 17, MUTED, anchor="end")[0])
     p.append(text(MONO_M, CONTACT[1], W - PX, name_base - 6, 17, MUTED, anchor="end")[0])
     y = name_base + 26
