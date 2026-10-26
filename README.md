@@ -30,11 +30,11 @@
 ### 03 — 최근 글
 
 <!-- BLOG-POST-LIST:START -->
+- [숫자는 안 틀리고 문장이 틀린다 — 다 쓴 글 19편을 LLM에 다듬게 한 뒤 검증한 기록](https://sihhub.github.io/blog/posts/llm-polish-what-breaks/)
 - [LLM은 어떻게 돌아가나 — 서버리스에서 안 되고, 브라우저에서는 되는 이유](https://sihhub.github.io/blog/posts/llm-inference-weights-gpu-browser/)
 - [화면 하나 바꾸고 막힌 배포 — 1년 반 멈춘 파이프라인에서 썩어 있던 것들](https://sihhub.github.io/blog/posts/dormant-pipeline-rot/)
 - [배포 이관은 왜 한 줄로 안 끝나는가 — Jenkins에서 Amplify로 옮기며 만난 벽 네 개](https://sihhub.github.io/blog/posts/deploy-migration-four-blockers/)
 - [Figma를 토큰의 단일 출처로 — Variables REST API 없이 동기화 파이프라인 만들기](https://sihhub.github.io/blog/posts/design-system-figma-token-sync/)
-- [로그가 거짓말을 할 때 — 관측을 오도한 두 사건](https://sihhub.github.io/blog/posts/misleading-logs-observability/)
 <!-- BLOG-POST-LIST:END -->
 
 <sub>블로그 피드에서 매일 자동으로 갱신됩니다.</sub>
